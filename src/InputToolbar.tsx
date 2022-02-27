@@ -81,11 +81,11 @@ export default class InputToolbar extends React.Component<
 
   componentDidMount() {
     this.keyboardWillShowListener = Keyboard.addListener(
-      'keyboardWillShow',
+      'keyboardDidShow',
       this.keyboardWillShow,
     )
     this.keyboardWillHideListener = Keyboard.addListener(
-      'keyboardWillHide',
+      'keyboardDidHide',
       this.keyboardWillHide,
     )
   }
